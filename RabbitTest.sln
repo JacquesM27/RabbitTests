@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitTestSender", "RabbitTest1\RabbitTestSender.csproj", "{12670F4F-BAA0-40F7-85B3-488C49A445FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbittestReceiver", "RabbittestReceiver\RabbittestReceiver.csproj", "{EA1A6764-8AED-4091-947F-D5EB1637D4E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit test1", "Rabbit test1", "{6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12670F4F-BAA0-40F7-85B3-488C49A445FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12670F4F-BAA0-40F7-85B3-488C49A445FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12670F4F-BAA0-40F7-85B3-488C49A445FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12670F4F-BAA0-40F7-85B3-488C49A445FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12670F4F-BAA0-40F7-85B3-488C49A445FA} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
+		{EA1A6764-8AED-4091-947F-D5EB1637D4E0} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E769D445-FA94-4FEA-A479-4B985C33D52F}
+	EndGlobalSection
+EndGlobal
