@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbittestReceiver", "Rabbi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit test1", "Rabbit test1", "{6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitTest2", "RabbitTest2", "{F8C670FE-B1E8-4EDD-8574-07DDAD259484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSender", "InputSender\InputSender.csproj", "{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1A6764-8AED-4091-947F-D5EB1637D4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{12670F4F-BAA0-40F7-85B3-488C49A445FA} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
 		{EA1A6764-8AED-4091-947F-D5EB1637D4E0} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
+		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5} = {F8C670FE-B1E8-4EDD-8574-07DDAD259484}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E769D445-FA94-4FEA-A479-4B985C33D52F}
