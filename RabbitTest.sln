@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit test1", "Rabbit test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitTest2", "RabbitTest2", "{F8C670FE-B1E8-4EDD-8574-07DDAD259484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSender", "InputSender\InputSender.csproj", "{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputSender", "InputSender\InputSender.csproj", "{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyReceiver", "LazyReceiver\LazyReceiver.csproj", "{8A2B4D21-BFF9-4163-A245-70FC01B1115E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2B4D21-BFF9-4163-A245-70FC01B1115E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2B4D21-BFF9-4163-A245-70FC01B1115E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2B4D21-BFF9-4163-A245-70FC01B1115E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2B4D21-BFF9-4163-A245-70FC01B1115E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{12670F4F-BAA0-40F7-85B3-488C49A445FA} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
 		{EA1A6764-8AED-4091-947F-D5EB1637D4E0} = {6007484B-4CAA-4A81-9CE2-1DC845DAA5D2}
 		{6A99F58F-F17E-463E-BCBC-2CA00741F8A5} = {F8C670FE-B1E8-4EDD-8574-07DDAD259484}
+		{8A2B4D21-BFF9-4163-A245-70FC01B1115E} = {F8C670FE-B1E8-4EDD-8574-07DDAD259484}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E769D445-FA94-4FEA-A479-4B985C33D52F}

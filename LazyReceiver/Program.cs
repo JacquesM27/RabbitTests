@@ -1,11 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System.Text;
 
 Console.WriteLine("Hello, World!");
 
-Console.Title = "Test2 sender";
-Console.WriteLine("Test2 sender. Queue: test.2.queue");
+
+Console.Title = "Test2 consumer";
+Console.WriteLine("Test2 consumer. Queue: test.2.queue");
 
 var factory = new ConnectionFactory()
 {
@@ -25,22 +27,25 @@ channel.QueueDeclare(
     autoDelete: false,
     arguments: null);
 
+var consumer = new EventingBasicConsumer(channel);
+consumer.Received += (model, ea) =>
+{
+    var content = Encoding.UTF8.GetString(ea.Body.Span);
+    Console.WriteLine(content);
+    channel.BasicAck(ea.DeliveryTag, false);
+};
+
+channel.BasicConsume(
+    queue: "test.2.queue",
+    autoAck: false,
+    consumer: consumer);
+
 while (true)
 {
-    Console.WriteLine("write sms content");
     Console.WriteLine("type exit to exit");
     string content = Console.ReadLine();
     if (content.Equals("exit"))
     {
         break;
     }
-    var body = Encoding.UTF8.GetBytes(content);
-
-    channel.BasicPublish(
-        exchange: "",
-        routingKey: "test.2.queue",
-        basicProperties: null,
-        body);
-
-    Console.WriteLine("sms sent\n\n");
 }
