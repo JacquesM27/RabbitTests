@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RabbittestReceiver
+namespace DirectReceiver
 {
     public class WorkerHostedService : BackgroundService
     {
         private readonly ConnectionFactory _connectionFactory;
         private readonly IConnection _connection;
         private readonly IModel _channel;
-        public WorkerHostedService()
+        private readonly string _queue;
+        public WorkerHostedService(string queue)
         {
             _connectionFactory = new()
             {
@@ -25,8 +26,10 @@ namespace RabbittestReceiver
             };
             _connection = _connectionFactory.CreateConnection();
             _channel = _connection.CreateModel();
+            _queue = queue;
         }
 
+       
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var consumer = new EventingBasicConsumer(_channel);
@@ -34,31 +37,11 @@ namespace RabbittestReceiver
             {
                 var content = Encoding.UTF8.GetString(ea.Body.Span);
                 HandleMessage(content, ea.RoutingKey);
-                _channel.BasicAck(ea.DeliveryTag, false);
             };
-            _channel.BasicConsume("test1-queue", false, consumer);
+            _channel.BasicConsume(_queue, true, consumer);
 
-            //while(!stoppingToken.IsCancellationRequested) { }
             return Task.CompletedTask;
         }
-
-
-        /* - unsafety consuming with auto ack
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
-        {
-            var consumer = new EventingBasicConsumer(_channel);
-            consumer.Received += (ch, ea) =>
-            {
-                var content = Encoding.UTF8.GetString(ea.Body.Span);
-                HandleMessage(content, ea.RoutingKey);
-                //_channel.BasicAck(ea.DeliveryTag, false);
-            };
-            _channel.BasicConsume("test1-queue", true, consumer);
-
-            //while(!stoppingToken.IsCancellationRequested) { }
-            return Task.CompletedTask;
-        }
-        */
 
         public void HandleMessage(string content, string routingKey)
         {
