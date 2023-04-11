@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DirectSender;
 
-Console.WriteLine("Hello, Exchange Direct queue!");
+Console.WriteLine("Hellogh, Exchange Direct queue!");
 
 string queue1 = "direct.test.1";
 string queue2 = "direct.test.2";
