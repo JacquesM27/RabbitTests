@@ -23,11 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectReceiver", "DirectRec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitExchangeFanout", "RabbitExchangeFanout", "{41912536-A7AD-436B-880E-B40AFF25FA58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FanoutSender", "FanoutSender\FanoutSender.csproj", "{BDE535D0-8ECB-4D40-81E5-8517EFC19FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutSender", "FanoutSender\FanoutSender.csproj", "{BDE535D0-8ECB-4D40-81E5-8517EFC19FB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFanoutReader", "SimpleFanoutReader\SimpleFanoutReader.csproj", "{9199C195-8EED-48F1-B15C-8AE7ED8C40DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFanoutReader", "SimpleFanoutReader\SimpleFanoutReader.csproj", "{9199C195-8EED-48F1-B15C-8AE7ED8C40DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondaryFanoutReader", "SecondaryFanoutReader\SecondaryFanoutReader.csproj", "{622C3DCB-BD0E-4C7F-946F-D157307DA021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondaryFanoutReader", "SecondaryFanoutReader\SecondaryFanoutReader.csproj", "{622C3DCB-BD0E-4C7F-946F-D157307DA021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitExchangeTopic", "RabbitExchangeTopic", "{F2CC36F6-CE67-491E-A05C-95FC4E644376}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
