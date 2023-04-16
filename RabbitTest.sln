@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicReader", "TopicReader\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitRPC", "RabbitRPC", "{09E6F0D0-391A-4530-83DD-81A08AE0BD07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RcpSender", "RcpSender\RcpSender.csproj", "{DD9A9DA5-1D91-4529-864C-1A5D8D0705F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpcSender", "RcpSender\RpcSender.csproj", "{DD9A9DA5-1D91-4529-864C-1A5D8D0705F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeRpcServer", "FakeRcpServer\FakeRpcServer.csproj", "{8674E95C-4A7F-47CD-8CC6-085133DEC703}"
 EndProject
